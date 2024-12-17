@@ -8,7 +8,7 @@ const UserList = () => {
     const fetchUsers = async () => {
       try {
         console.log("sending request");
-        const response = await axios.get('http://localhost:5000/api/users');
+        const response = await axios.get('https://final-full-stack-learning-render-backend.vercel.app/api/users');
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);
